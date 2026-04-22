@@ -62,16 +62,17 @@ As we can see that every neighbours of node 4 are visited, so move to the next n
 front of the queue. 
 Remove node 4 from the front of queue and visit the unvisited neighbours and push them into queue. 
 Now, Queue becomes empty, So, terminate these process of iteration. 
-<h3>Algorithm:</h3> 
+### Algorithm: 
 1. Construct a Graph with Nodes and Edges 
 2. Breadth First Uses Queue and iterates through the Queue for Traversal. 
 3. Insert a Start Node into the Queue. 
 4. Find its Successors Or neighbors and Check whether the node is visited or not. 
 5. If Not Visited, add it to the Queue. Else Continue. 
 6. Iterate steps 4 and 5 until all nodes get visited, and there are no more unvisited nodes. 
+
 <h3>Program:</h3> 
 
-```
+```py
 from collections import deque
 from collections import defaultdict
 
@@ -105,7 +106,8 @@ visited = defaultdict(bool)
 traversedpath = bfs(graph,start,visited,path)
 print(traversedpath)
 ```
-<h3>Sample Input :</h3> 
+### Sample Input :
+```
 5 6
 0 1
 0 2
@@ -113,12 +115,18 @@ print(traversedpath)
 1 3
 2 4
 3 4
-
+```
 <h4>Sample Output:</h4> 
+
+```
 ['0', '1', '2', '3', '4'] 
+```
 
 <h3>Output</h3>
 
 <img width="410" height="161" alt="image" src="https://github.com/user-attachments/assets/be981450-f801-4fec-97f8-4d723d0b0094" />
+
+<h3>Result</h3>
+     Thus,a Graph was constructed and implementation of Breadth First Search for the same graph was done successfully.
 
 
